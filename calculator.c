@@ -12,6 +12,14 @@ int multiply(int i, int j) {
     return (i * j);
 }
 
+double inverse(double num) {
+	if (num == 0) {
+		printf("Error: Division by zero!\n");
+		return 0;
+	}
+	return 1 / num;
+}
+
 float divide(int i, int j) {
     if (j == 0) {
         printf("Error: Division by zero is not allowed.\n");
