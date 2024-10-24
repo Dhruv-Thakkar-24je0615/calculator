@@ -12,7 +12,7 @@ int multiply(int i, int j) {
     return (i * j);
 }
 
-double inverse(double num) {
+float inverse(int num) {
 	if (num == 0) {
 		printf("Error: Division by zero!\n");
 		return 0;
@@ -72,17 +72,17 @@ int main() {
             case '^':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("Square of %d is %d\n", a, square(a));
                 break;
             case '#':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("Cube of %d is %d\n", a, cube(a));
                 break;
             case 'i':
                 printf("Enter an integer: ");
                 scanf("%d", &a);
-                printf("Will be implemented soon...\n");
+                printf("Inverse of %d is %f\n", a, inverse(a));
                 break;
             default:
                 printf("Invalid operation. Please try again.\n");
